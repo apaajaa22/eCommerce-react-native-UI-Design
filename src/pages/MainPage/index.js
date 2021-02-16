@@ -16,54 +16,48 @@ import {
 
 const MainPage = ({navigation}) => {
   return (
-    <View style={styles.page}>
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <View style={styles.wrapper}>
-          {/* Header */}
-          <View style={styles.header}>
-            <TouchableOpacity
-              onPress={() => navigation.toggleDrawer('MyDrawer')}>
-              <ILDrawer />
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.IcBasket}>
-              <IcBasket />
-              <Text style={styles.textLogo}>My Basket</Text>
-            </TouchableOpacity>
-          </View>
-
-          {/* Title */}
-          <View style={styles.title}>
-            <Text style={styles.textTitle}>
-              Hello Kante, What fruit salad combo do you want today?
-            </Text>
-          </View>
-          {/* Search Bar */}
-          <SearchBar />
-          {/*content*/}
-          <Gap height={40} />
-          <Text style={styles.combo}>Recommended Combo</Text>
-          <Gap height={24} />
-          <View style={styles.foodCombo}>
-            <FoodCombo
-              title="Honey lime combo"
-              price="2,000"
-              image={ILFood1}
-              backgroundColor="white"
-            />
-            <FoodCombo
-              title="Berry mango combo"
-              price="8,000"
-              image={ILFood2}
-              backgroundColor="white"
-            />
-          </View>
-          <Gap height={24} />
-          <View style={styles.tabSection}>
-            <MainPageTabSection />
-          </View>
+    <ScrollView showsVerticalScrollIndicator={false}>
+      <View style={styles.wrapper}>
+        {/* Header */}
+        <View style={styles.header}>
+          <TouchableOpacity onPress={() => navigation.toggleDrawer('MyDrawer')}>
+            <ILDrawer />
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.IcBasket}>
+            <IcBasket />
+            <Text style={styles.textLogo}>My Basket</Text>
+          </TouchableOpacity>
         </View>
-      </ScrollView>
-    </View>
+
+        {/* Title */}
+        <View style={styles.title}>
+          <Text style={styles.textTitle}>
+            Hello Kante, What fruit salad combo do you want today?
+          </Text>
+        </View>
+        {/* Search Bar */}
+        <SearchBar />
+        {/*content*/}
+        <Gap height={40} />
+        <Text style={styles.combo}>Recommended Combo</Text>
+        <Gap height={21} />
+        <View style={styles.foodCombo}>
+          <FoodCombo
+            title="Honey lime combo"
+            price="2,000"
+            image={ILFood1}
+            backgroundColor="white"
+          />
+          <FoodCombo
+            title="Berry mango combo"
+            price="8,000"
+            image={ILFood2}
+            backgroundColor="white"
+          />
+        </View>
+      </View>
+      <MainPageTabSection />
+    </ScrollView>
   );
 };
 
@@ -79,6 +73,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 24,
     flex: 1,
+    backgroundColor: 'white',
   },
   header: {
     flexDirection: 'row',
@@ -96,7 +91,5 @@ const styles = StyleSheet.create({
   combo: {fontSize: 24, fontFamily: 'Transat-Medium'},
   foodCombo: {
     flexDirection: 'row',
-    justifyContent: 'center',
   },
-  tabSection: {flex: 1},
 });

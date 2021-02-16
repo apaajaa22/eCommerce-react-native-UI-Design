@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {Gap} from '..';
-import {IcAdd, IcDollar, IcLike, ILFood1} from '../../../assets/Illustration';
+import {IcAdd, IcDollar, IcLike} from '../../../assets/Illustration';
 
 const FoodCombo = ({title, price, image, backgroundColor}) => {
   return (

@@ -34,6 +34,7 @@ const Hottest = () => (
       horizontal
       style={{flexDirection: 'row'}}
       showsHorizontalScrollIndicator={false}>
+      <Gap width={23} />
       <FoodCombo
         title="Honey lime combo"
         price="10,000"
@@ -53,16 +54,101 @@ const Hottest = () => (
         backgroundColor="#F1EFF6"
       />
     </ScrollView>
+    <Gap height={24} />
   </View>
 );
 
 const Popular = () => (
-  <View style={[styles.scene, {backgroundColor: '#673ab7'}]} />
+  <View style={[styles.scene, {backgroundColor: 'white'}]}>
+    <Gap height={24} />
+    <ScrollView
+      horizontal
+      style={{flexDirection: 'row'}}
+      showsHorizontalScrollIndicator={false}>
+      <Gap width={23} />
+      <FoodCombo
+        title="Honey lime combo"
+        price="10,000"
+        image={ILFood3}
+        backgroundColor="#FFFAEB"
+      />
+      <FoodCombo
+        title="Melon fruit salad"
+        price="10,000"
+        image={ILFood1}
+        backgroundColor="#F1EFF6"
+      />
+      <FoodCombo
+        title="Tropical fruit salad"
+        price="10,000"
+        image={ILFood4}
+        backgroundColor="#FEF0F0"
+      />
+    </ScrollView>
+    <Gap height={24} />
+  </View>
 );
 const NewCombo = () => (
-  <View style={[styles.scene, {backgroundColor: '#673ab7'}]} />
+  <View style={[styles.scene, {backgroundColor: 'white'}]}>
+    <Gap height={24} />
+    <ScrollView
+      horizontal
+      style={{flexDirection: 'row'}}
+      showsHorizontalScrollIndicator={false}>
+      <Gap width={23} />
+
+      <FoodCombo
+        title="Tropical fruit salad"
+        price="10,000"
+        image={ILFood4}
+        backgroundColor="#FEF0F0"
+      />
+      <FoodCombo
+        title="Melon fruit salad"
+        price="10,000"
+        image={ILFood1}
+        backgroundColor="#F1EFF6"
+      />
+      <FoodCombo
+        title="Honey lime combo"
+        price="10,000"
+        image={ILFood3}
+        backgroundColor="#FFFAEB"
+      />
+    </ScrollView>
+    <Gap height={24} />
+  </View>
 );
-const Top = () => <View style={[styles.scene, {backgroundColor: '#673ab7'}]} />;
+const Top = () => (
+  <View style={[styles.scene, {backgroundColor: 'white'}]}>
+    <Gap height={24} />
+    <ScrollView
+      horizontal
+      style={{flexDirection: 'row'}}
+      showsHorizontalScrollIndicator={false}>
+      <Gap width={23} />
+      <FoodCombo
+        title="Tropical fruit salad"
+        price="10,000"
+        image={ILFood4}
+        backgroundColor="#FEF0F0"
+      />
+      <FoodCombo
+        title="Honey lime combo"
+        price="10,000"
+        image={ILFood3}
+        backgroundColor="#FFFAEB"
+      />
+      <FoodCombo
+        title="Melon fruit salad"
+        price="10,000"
+        image={ILFood1}
+        backgroundColor="#F1EFF6"
+      />
+    </ScrollView>
+    <Gap height={24} />
+  </View>
+);
 
 const initialLayout = {width: Dimensions.get('window').width};
 
