@@ -1,7 +1,7 @@
 import GetStarted from './GetStarted';
 import NamePage from './NamePage';
 import MainPage from './MainPage';
-import Setting from './Setting';
+import StatusDelivery from './StatusDelivery';
 import Feed from './Feed';
 
-export {GetStarted, NamePage, MainPage, Setting, Feed};
+export {GetStarted, NamePage, MainPage, StatusDelivery, Feed};

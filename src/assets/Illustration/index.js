@@ -12,6 +12,15 @@ import ILFood5 from './ILFood5.png';
 import IcLike from './IcLike.svg';
 import IcAdd from './IcAdd.svg';
 import IcDollar from './IcDollar.svg';
+import IcOrderTaken from './IcOrderTaken.svg';
+import IcOrderPrepare from './IcOrderPrepare';
+import IcOrderReceived from './IcOrderReceived';
+import IcOrderDelivered from './IcOrderDelivered';
+import IcOrderSuccess from './IcSuccess';
+import IcSuccessStatus from './IcSuccessStatus';
+import IcOrderPhone from './IcOrderPhone.svg';
+import IcOrderWaiting from './IcOrderWaiting.svg';
+import ILMap from './map.png';
 
 export {
   ILBasket,
@@ -28,4 +37,13 @@ export {
   IcLike,
   IcAdd,
   IcDollar,
+  IcOrderTaken,
+  IcOrderPrepare,
+  IcOrderReceived,
+  IcOrderDelivered,
+  IcOrderSuccess,
+  IcSuccessStatus,
+  IcOrderPhone,
+  IcOrderWaiting,
+  ILMap,
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createStackNavigator} from '@react-navigation/stack';
-import {Feed, GetStarted, MainPage, NamePage, Setting} from '../pages';
+import {Feed, GetStarted, MainPage, NamePage, StatusDelivery} from '../pages';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator();
@@ -13,7 +13,7 @@ const MyTabBottom = () => {
   return (
     <Tab.Navigator>
       <Tab.Screen name="MainPage" component={MainPage} />
-      <Tab.Screen name="Setting" component={Setting} />
+      <Tab.Screen name="StatusDelivery" component={StatusDelivery} />
       <Tab.Screen name="Feed" component={Feed} />
     </Tab.Navigator>
   );
