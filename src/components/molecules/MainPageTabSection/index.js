@@ -9,8 +9,9 @@ const renderTabBar = (props) => (
     {...props}
     indicatorStyle={{
       backgroundColor: '#FFA451',
-      width: '15%',
+      width: '10%',
       height: '5%',
+      marginLeft: 10,
     }}
     style={{backgroundColor: 'white'}}
     tabStyle={{width: 'auto', height: 'auto'}}

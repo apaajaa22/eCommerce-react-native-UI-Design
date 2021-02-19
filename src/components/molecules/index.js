@@ -6,6 +6,8 @@ import FoodCombo from './FoodCombo';
 import MainPageTabSection from './MainPageTabSection';
 import Header from './Header';
 import OrderStatusDelivery from './OrderStatusDelivery';
+import ListItemFood from './ListItemFood';
+import CheckOut from './CheckOut';
 
 export {
   Button,
@@ -16,4 +18,6 @@ export {
   MainPageTabSection,
   Header,
   OrderStatusDelivery,
+  ListItemFood,
+  CheckOut,
 };

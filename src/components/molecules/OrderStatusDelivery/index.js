@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {
   IcOrderDelivered,
   IcOrderPrepare,
@@ -10,7 +10,7 @@ import {
   IcOrderWaiting,
 } from '../../../assets/Illustration';
 
-const OrderStatusDelivery = ({color, Icons, Status}) => {
+const OrderStatusDelivery = ({color, Icons, Status, label}) => {
   const Icon = () => {
     switch (Icons) {
       case 'taken':
@@ -31,7 +31,11 @@ const OrderStatusDelivery = ({color, Icons, Status}) => {
       case 'success':
         return <IcSuccessStatus />;
       case 'delivered':
-        return <IcOrderPhone />;
+        return (
+          <TouchableOpacity>
+            <IcOrderPhone />
+          </TouchableOpacity>
+        );
       case 'waiting':
         return <IcOrderWaiting />;
       default:
@@ -45,7 +49,7 @@ const OrderStatusDelivery = ({color, Icons, Status}) => {
         <Icon />
       </View>
       <View style={styles.title}>
-        <Text style={styles.titleText}>Order Taken</Text>
+        <Text style={styles.titleText}>{label}</Text>
       </View>
       <View style={styles.wrapper}>
         <IconStatus />

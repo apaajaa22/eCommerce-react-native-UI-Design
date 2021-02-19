@@ -23,7 +23,9 @@ const MainPage = ({navigation}) => {
           <TouchableOpacity onPress={() => navigation.toggleDrawer('MyDrawer')}>
             <ILDrawer />
           </TouchableOpacity>
-          <TouchableOpacity style={styles.IcBasket}>
+          <TouchableOpacity
+            style={styles.IcBasket}
+            onPress={() => navigation.navigate('MyBasket')}>
             <IcBasket />
             <Text style={styles.textLogo}>My Basket</Text>
           </TouchableOpacity>

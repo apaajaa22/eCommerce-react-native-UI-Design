@@ -1,9 +1,18 @@
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {createDrawerNavigator} from '@react-navigation/drawer';
-import {createStackNavigator} from '@react-navigation/stack';
-import {Feed, GetStarted, MainPage, NamePage, StatusDelivery} from '../pages';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
+import React from 'react';
+import {StyleSheet} from 'react-native';
+import {
+  Feed,
+  GetStarted,
+  MainPage,
+  MyBasket,
+  NamePage,
+  Payment,
+  StatusDelivery,
+  SuccessOrder,
+} from '../pages';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -54,6 +63,30 @@ const Router = () => {
         name="MyTabBottom"
         component={MyTabBottom}
         options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="MyBasket"
+        component={MyBasket}
+        options={{
+          headerShown: false,
+          ...TransitionPresets.DefaultTransition,
+        }}
+      />
+      <Stack.Screen
+        name="Payment"
+        component={Payment}
+        options={{
+          headerShown: false,
+          ...TransitionPresets.ModalSlideFromBottomIOS,
+        }}
+      />
+      <Stack.Screen
+        name="SuccessOrder"
+        component={SuccessOrder}
+        options={{
+          headerShown: false,
+          ...TransitionPresets.ModalSlideFromBottomIOS,
+        }}
       />
     </Stack.Navigator>
   );
